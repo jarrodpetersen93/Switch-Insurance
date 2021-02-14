@@ -1,0 +1,12 @@
+.homeIcon::after {
+    content: 'homeInsLogo';
+    display: block;
+    height: 72px;  /*height of icon */
+    width: 72px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 0px;
+    left: -40px;
+      /*background */
+    background: #F8E6AE url(ico.gif) no-repeat 0px 0px;
+}
