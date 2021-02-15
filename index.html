@@ -1,318 +1,184 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body id="myPage">
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
-<!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align">
-     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-     <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-     <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Quote</a>
-     <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-     <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-     <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-       <div class="w3-dropdown-hover w3-hide-small">
-       <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
-       <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-         <a href="#" class="w3-bar-item w3-button">Link</a>
-         <a href="#" class="w3-bar-item w3-button">Link</a>
-         <a href="#" class="w3-bar-item w3-button">Link</a>
-       </div>
-     </div>
-     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
-    </div>
-   
-     <!-- Navbar on small screens -->
-     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-       <a href="#team" class="w3-bar-item w3-button">Team</a>
-       <a href="#work" class="w3-bar-item w3-button">Work</a>
-       <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-       <a href="#" class="w3-bar-item w3-button">Search</a>
-     </div>
-   </div>
-   
-   <!-- Image Header -->
-   <div class="w3-display-container w3-animate-opacity">
-     <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
-     <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-       <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
-     </div>
-   </div>
-   
-   <!-- Modal -->
-   <div id="id01" class="w3-modal">
-     <div class="w3-modal-content w3-card-4 w3-animate-top">
-       <header class="w3-container w3-teal w3-display-container"> 
-         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-         <h4>Oh snap! We just showed you a modal..</h4>
-         <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-       </header>
-       <div class="w3-container">
-         <p>Cool huh? Ok, enough teasing around..</p>
-         <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-       </div>
-       <footer class="w3-container w3-teal">
-         <p>Modal footer</p>
-       </footer>
-     </div>
-   </div>
-   
-   <!-- Team Container -->
-   <div class="w3-container w3-padding-64 w3-center" id="team">
-   <h2>OUR TEAM</h2>
-   <p>Meet the team - our office rats:</p>
-   
-   <div class="w3-row"><br>
-   
-   <div class="w3-quarter">
-     <img src="image2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-     <h3>Jarrod Petersen</h3>
-     <p>Chief Executive Officer</p>
-   </div>
-   
-   <div class="w3-quarter">
-     <img src="images/Mat.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-     <h3>Mathew Lawton</h3>
-     <p>Head of Innovation</p>
-   </div>
-   
-   <div class="w3-quarter">
-     <img src="images/Elisha.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-     <h3>Elisha Rackley</h3>
-     <p>Creative Director</p>
-   </div>
-   
-   <div class="w3-quarter">
-     <img src="images/Keegan.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-     <h3>Keegan Whitfield</h3>
-     <p>Fixer</p>
-   </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Switch Insurance</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-   <div class="w3-quarter">
-    <img src="images/fletcher.jpg" alt="Boss" style="width:45%" class="w3-circle w3-center w3-hover-opacity">
-    <h3>Fletcher Petersen</h3>
-    <p>Network Engineer</p>
-  </div>
-   
-  </div>
-   </div>
-   
-   <!-- Work Row -->
-   <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-   
-   <div class="w3-quarter">
-   <h2>Our Work</h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-   </div>
-   
-   <div class="w3-quarter">
-   <div class="w3-card w3-white">
-     <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-     <div class="w3-container">
-     <h3>Customer 1</h3>
-     <h4>Trade</h4>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     </div>
-     </div>
-   </div>
-   
-   <div class="w3-quarter">
-   <div class="w3-card w3-white">
-     <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-     <div class="w3-container">
-     <h3>Customer 2</h3>
-     <h4>Trade</h4>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     </div>
-     </div>
-   </div>
-   
-   <div class="w3-quarter">
-   <div class="w3-card w3-white">
-     <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-     <div class="w3-container">
-     <h3>Customer 3</h3>
-     <h4>Trade</h4>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     <p>Blablabla</p>
-     </div>
-     </div>
-   </div>
-   
-   </div>
-   
-   <!-- Container -->
-   <div class="w3-container" style="position:relative">
-     <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-     style="position:absolute;top:-28px;right:24px">+</a>
-   </div>
-   
-   <!-- Pricing Row -->
-   <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-       <h2>PRICING</h2>
-       <p>Choose a pricing plan that fits your needs.</p><br>
-       <div class="w3-third w3-margin-bottom">
-         <ul class="w3-ul w3-border w3-hover-shadow">
-           <li class="w3-theme">
-             <p class="w3-xlarge">Basic</p>
-           </li>
-           <li class="w3-padding-16"><b>10GB</b> Storage</li>
-           <li class="w3-padding-16"><b>10</b> Emails</li>
-           <li class="w3-padding-16"><b>10</b> Domains</li>
-           <li class="w3-padding-16"><b>Endless</b> Support</li>
-           <li class="w3-padding-16">
-             <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-             <span class="w3-opacity">per month</span>
-           </li>
-           <li class="w3-theme-l5 w3-padding-24">
-             <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-           </li>
-         </ul>
-       </div>
-   
-       <div class="w3-third w3-margin-bottom">
-         <ul class="w3-ul w3-border w3-hover-shadow">
-           <li class="w3-theme-l2">
-             <p class="w3-xlarge">Pro</p>
-           </li>
-           <li class="w3-padding-16"><b>25GB</b> Storage</li>
-           <li class="w3-padding-16"><b>25</b> Emails</li>
-           <li class="w3-padding-16"><b>25</b> Domains</li>
-           <li class="w3-padding-16"><b>Endless</b> Support</li>
-           <li class="w3-padding-16">
-             <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-             <span class="w3-opacity">per month</span>
-           </li>
-           <li class="w3-theme-l5 w3-padding-24">
-             <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-           </li>
-         </ul>
-       </div>
-   
-       <div class="w3-third w3-margin-bottom">
-         <ul class="w3-ul w3-border w3-hover-shadow">
-           <li class="w3-theme">
-             <p class="w3-xlarge">Premium</p>
-           </li>
-           <li class="w3-padding-16"><b>50GB</b> Storage</li>
-           <li class="w3-padding-16"><b>50</b> Emails</li>
-           <li class="w3-padding-16"><b>50</b> Domains</li>
-           <li class="w3-padding-16"><b>Endless</b> Support</li>
-           <li class="w3-padding-16">
-             <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-             <span class="w3-opacity">per month</span>
-           </li>
-           <li class="w3-theme-l5 w3-padding-24">
-             <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-           </li>
-         </ul>
-       </div>
-   </div>
-   
-   <!-- Contact Container -->
-   <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-     <div class="w3-row">
-       <div class="w3-col m5">
-       <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-         <h3>Address</h3>
-         <p>Swing by for a cup of coffee, or whatever.</p>
-         <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-         <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-         <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
-       </div>
-       <div class="w3-col m7">
-         <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-         <div class="w3-section">      
-           <label>Name</label>
-           <input class="w3-input" type="text" name="Name" required>
-         </div>
-         <div class="w3-section">      
-           <label>Email</label>
-           <input class="w3-input" type="text" name="Email" required>
-         </div>
-         <div class="w3-section">      
-           <label>Message</label>
-           <input class="w3-input" type="text" name="Message" required>
-         </div>  
-         <input class="w3-check" type="checkbox" checked name="Like">
-         <label>I Like it!</label>
-         <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-         </form>
-       </div>
-     </div>
-   </div>
-   
-   <!-- Image of location/map -->
-   <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
-   
-   <!-- Footer -->
-   <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-     <h4>Follow Us</h4>
-     <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-     <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-     <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-     <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-     <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-   
-     <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-       <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-       <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-       <i class="fa fa-chevron-circle-up"></i></span></a>
-     </div>
-   </footer>
-   
-   <script>
-   // Script for side navigation
-   function w3_open() {
-     var x = document.getElementById("mySidebar");
-     x.style.width = "300px";
-     x.style.paddingTop = "10%";
-     x.style.display = "block";
-   }
-   
-   // Close side navigation
-   function w3_close() {
-     document.getElementById("mySidebar").style.display = "none";
-   }
-   
-   // Used to toggle the menu on smaller screens when clicking on the menu button
-   function openNav() {
-     var x = document.getElementById("navDemo");
-     if (x.className.indexOf("w3-show") == -1) {
-       x.className += " w3-show";
-     } else { 
-       x.className = x.className.replace(" w3-show", "");
-     }
-   }
-   </script>
-   
-   </body>
-   </html>
-   
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">Switch Insurance</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" role="button" href="#">Sign In</a></div>
+        </div>
+    </nav>
+    <header class="masthead text-white text-center" style="background: url('assets/img/Untitled%20design.png')no-repeat center center;background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">'Prepare &amp; Compare from anywhere'</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <a class="homeIns" href="#"><div class="d-flex justify-content-center features-icons-icon" data-bs-hover-animate="pulse"><img src="images/HomeInsLogo.ico" style="text-align: center; margin: 0 auto;" alt="" width="72" height="72" title="Bootstrap">
+                            <!-- <i class="icon-screen-desktop m-auto text-primary" data-bs-hover-animate="pulse"></i> --></div>
+                        <h3 style="color: black;">Home Insurance</h3>
+                        <p class="lead mb-0" style="color: black;">Click here to get a home &amp; contents quote</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- <a href="#"> --><!-- Removed anchor as it was pushing element to the left -->
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <a class="homeIns"><div class="d-flex justify-content-center features-icons-icon" data-bs-hover-animate="pulse"><img src="images/CarInsLogo.ico" style="text-align: center; margin: 0 auto; " alt="" width="72" height="72" title="Bootstrap"></div>
+                        <h3 style="color: black;">Motor Insurance</h3>
+                        <p class="lead mb-0" style="color: black;">Click here to get a motor insurance quote</p>
+                    </div>
+                </a>
+                </div>
+                <!-- </a> -->
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <a href="#"><div class="d-flex justify-content-center features-icons-icon" data-bs-hover-animate="pulse"><img src="images/LandlordsInsLogo.ico" style="text-align: center; margin: 0 auto;" alt="" width="72" height="72" title="Bootstrap" ></div>
+                        <h3 style="color: black;">Landlords Quote</h3>
+                        <p class="lead mb-0" style="color: black;">Click here to get a quote for your residential investment property</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;images/crash.png&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Unrivalled Service</h2>
+                    <p class="lead mb-0">Switch insurance is the first service in Australia that allows you to get several quotes for your car or home & also lodge claims electronically. When you buy a policy with Switch you are given access to lodge and manage claims through our online claims portal.</p>
+                    <p class="lead mb-0">You also will be allocated your own claim manager who you can call regarding anything to do with your claim, rather than spending long periods of time on hold with overseas call centres.</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;images/fallenTree.png&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Honesty & Integrity</h2>
+                    <p class="lead mb-0">Switch Insurance is a wholely Australian owned insurance broking service. We pride ourselves on the transparency of our fees & providing a service that is solely focused on achieving the best possible result for you.</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-3.jpg&quot;);"><span></span></div>
+                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
+                    <h2>Easy to use & quick</h2>
+                    <p class="lead mb-0">Get quotes & compare coverage options in just 5 minutes with Switch Insurance's proprietary insurance management platform. Beyond simply providing a quote, once active you can adjust, cancel & claim against an insurance policy all via the application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">The Switch Team</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/image2.jpg">
+                        <h5>Jarrod Petersen</h5>
+                        <h5>Chief Executive Officer</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/Mat.jpg">
+                        <h5>Mathew Lawton</h5>
+                        <h5>Head of Innovation</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/Elisha.jpg">
+                        <h5>Elisha Rackley</h5>
+                        <h5>Creative Director</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/fletcher.jpg">
+                        <h5>Fletcher Petersen</h5>
+                        <h5>Lead Web Developer</h5>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/Keegan.jpg">
+                            <h5>Keegan Whitfield</h5>
+                            <h5>Lead UI/UX Developer</h5>
+                        </div>
+            </div>
+        </div>
+    </section>
+    <section class="call-to-action text-white text-center" style="background:url(&quot;assets/img/bg-masthead.jpg&quot;) no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Contact</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Brand 2021. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>
